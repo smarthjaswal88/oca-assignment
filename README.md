@@ -1,89 +1,103 @@
-# OCA Full Stack Assignment
+🌱 OCA Full Stack Assignment
+This is a full-stack web application developed for the Organic Cotton Accelerator assignment. It features a custom PHP MVC backend and a React.js frontend, implementing authentication, session handling, and an interactive map of Pakistan using jVectorMap.
 
-This project is a full-stack web application built using **PHP (backend)** and **React (frontend)**, following the **MVC (Model-View-Controller)** architecture on the backend. It provides user authentication and displays interactive maps of Pakistan on the dashboard.
+🔗 Live Demo
+Frontend: https://oca-assignment-yx18.vercel.app/
 
-Frontend Hosted link : https://oca-assignment-yx18.vercel.app/
-Guideline: Please click on Guest Log in button since my server file isnt deployed on a remote server.
+⚠️ Please use the Guest Login button as the server is not hosted remotely.
 
----
+📌 Assignment Sections
 
-## 📂 Features
+1. 🛠️ Custom PHP MVC Framework
+   Built a mini PHP MVC framework from scratch
 
-- User Signup (API)
-- User Login (API)
-- User Logout (API)
-- Session management using PHP
-- Secure login flow with session handling
-- Guest login (no authentication required)
-- React frontend with protected routes
-- Display of Pakistan map:
-  - **Interactive Pakisthan map**
+Features:
 
----
+Custom routing system supporting GET and POST
 
-## 🏗️ Architecture
+Controller/View architecture with a clean folder structure
 
-### Backend: PHP MVC
+View rendering via basic PHP templating
 
-- **Model:** Handles all database interactions (e.g., `login_model.php`)
-- **View:** React acts as the view layer on the frontend
-- **Controller:** Business logic for handling API requests (e.g., `login_controller.php`)
+Basic error handling (404 pages, exceptions)
 
----
+📁 Located in the /Server folder
 
-## 📦 Tech Stack
+2. 🔐 REST API in PHP
+   Mock REST API used by the React frontend for authentication and user actions.
 
-- **Frontend:** React JS
-- **Backend:** PHP (with MVC structure)
-- **Database:** MySQL (using PDO)
-- **Libraries Used:**
-  - [`jVectorMap`](https://jvectormap.com/) – For rendering Pakistan map
-- **API Format:** JSON (POST requests)
+📌 Endpoints:
+Endpoint Method Description
+http://localhost:8000/routes/signup_user.php   POST  Register a new user
+http://localhost:8000/routes/login_user.php    POST  Authenticate a user
+http://localhost:8000/routes/logout_user.php   POST  Destroy user session
 
----
+✅ Features
+Input validation
 
+Session management using PHP
 
-## 🚀 Getting Started
+Proper HTTP status codes
 
-### 1. Clone the Repository
+Secure login/logout flows
 
-```bash
-git clone https://github.com/smarthjaswal88/oca-assignment.git
+📁 Sample usage provided in the React frontend (/Client/oca-client) using fetch() POST requests.
 
+3. 🗺️ Interactive Map with jVectorMap
+   Interactive map of Pakistan:
 
-Backend Setup (PHP + MySQL)
+Highlights provinces on mouseover
+
+Allows zooming into specific regions
+
+Alert displays province name on click
+
+Each province styled with a unique color
+
+📁 Implemented in React under /Client/oca-client/src/components/PakMap
+
+⚙️ Tech Stack
+Frontend React.js
+Backend PHP (Custom MVC)
+Database MySQL (PDO used for access)
+Mapping jVectorMap
+
+🚀 Getting Started
+🔧 Backend Setup (PHP + MySQL)
 cd Server
 php -S localhost:8000
+⚠️ Ensure your database credentials are correct in includes/dbHandler.php
 
-Ensure database connection in includes/dbHandler.php
-
-
-Frontend Setup (React)
-
-cd ../Client/oca-client
-npm install
+🌐 Frontend Setup (React)
+cd Client/oca-client
+npm install --f
 npm start
+👨‍💻 How to Use
+Guest Login: Click the "Guest Log In" button to access the dashboard without auth.
 
+Sign Up: Register with your name, email, and password.
 
-👤 How to Use
-After the client is running:
+Log In: Access the app with your credentials.
 
-Sign Up — Register with username, email, and password
-
-Log In — Authenticate using your credentials
-
-Guest Log In — No auth needed, explore directly
-
-On Successful Login
-You’ll see a map of Pakistan:
-On Click of any region in the map, you will find a toast message on the top-right corner of the screen displaying the name of that region.
-
-
+Log Out: End your session securely.
 
 🧠 Notes
-PHP sessions are used for managing logged-in states.
+PHP sessions manage authentication states.
 
-Unauthorized users are blocked from accessing protected routes.
+Protected routes are restricted for unauthenticated users.
 
-Guest users bypass authentication and can directly view maps.
+Guest users can skip login to explore the map directly.
 
+All API requests use JSON POST format.
+
+📁 Folder Structure
+
+/Client
+└── oca-client # React frontend
+
+/Server
+├── controllers # PHP controllers
+├── models # PHP models
+├── routes # Endpoint routes
+├── includes # DB connection, session config
+└── utils # Generic Methods or function (As of now empty)
