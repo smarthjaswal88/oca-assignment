@@ -45,7 +45,7 @@ This project is a full-stack web application built using **PHP (backend)** and *
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/oca-assignment.git
+git clone https://github.com/smarthjaswal88/oca-assignment.git
 
 
 Backend Setup (PHP + MySQL)
