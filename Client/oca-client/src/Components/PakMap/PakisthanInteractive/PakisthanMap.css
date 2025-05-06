@@ -1,0 +1,72 @@
+.map-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  width: 100%;
+  max-height: 90vh;
+}
+
+.map-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: center;
+  justify-content: center;
+}
+
+.map-border {
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.region-default {
+  fill: #d3d3d3;
+  outline: none;
+  stroke: #fff;
+  stroke-width: 0.5;
+}
+.region-default:hover {
+  fill: #f4a300;
+  cursor: pointer;
+}
+
+.region-selected {
+  fill: #f4a300;
+  outline: none;
+  stroke: #fff;
+  stroke-width: 0.5;
+}
+
+.city-marker {
+  r: 6;
+  fill: #f53;
+}
+
+.city-label {
+  font-family: system-ui;
+  fill: #5d5a6d;
+  font-size: 25px;
+  text-anchor: middle;
+  dominant-baseline: central;
+  transform: translateY(-10px);
+}
+
+.info-box {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: #f3f3f3;
+  border-radius: 0.5rem;
+  width: 100%;
+  max-width: 768px;
+}
+
+.region-name {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.region-description {
+  color: #4a4a4a;
+}
