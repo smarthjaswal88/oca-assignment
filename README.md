@@ -13,9 +13,8 @@ This project is a full-stack web application built using **PHP (backend)** and *
 - Secure login flow with session handling
 - Guest login (no authentication required)
 - React frontend with protected routes
-- Display of two Pakistan maps:
-  - **Interactive hover map**
-  - **Zoomable map**
+- Display of Pakistan map:
+  - **Interactive Pakisthan map**
 
 ---
 
@@ -35,7 +34,7 @@ This project is a full-stack web application built using **PHP (backend)** and *
 - **Backend:** PHP (with MVC structure)
 - **Database:** MySQL (using PDO)
 - **Libraries Used:**
-  - [`jVectorMap`](https://jvectormap.com/) – For rendering Pakistan maps
+  - [`jVectorMap`](https://jvectormap.com/) – For rendering Pakistan map
 - **API Format:** JSON (POST requests)
 
 ---
