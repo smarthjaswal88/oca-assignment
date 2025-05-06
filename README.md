@@ -2,6 +2,8 @@
 
 This project is a full-stack web application built using **PHP (backend)** and **React (frontend)**, following the **MVC (Model-View-Controller)** architecture on the backend. It provides user authentication and displays interactive maps of Pakistan on the dashboard.
 
+Frontend Hosted link : https://oca-assignment-yx18.vercel.app/
+
 ---
 
 ## 📂 Features
