@@ -72,11 +72,8 @@ Log In — Authenticate using your credentials
 Guest Log In — No auth needed, explore directly
 
 On Successful Login
-You’ll see two maps of Pakistan:
-
-Hoverable Map – Highlights states on mouseover
-
-Zoomable Map – Interactively zoom into regions
+You’ll see a map of Pakistan:
+On Click of any region in the map, you will find a toast message on the top-right corner of the screen displaying the name of that region.
 
 
 
