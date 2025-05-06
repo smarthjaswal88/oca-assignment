@@ -28,9 +28,9 @@ Basic error handling (404 pages, exceptions)
 
 📌 Endpoints:
 Endpoint Method Description
-http://localhost:8000/routes/signup_user.php   POST  Register a new user
-http://localhost:8000/routes/login_user.php    POST  Authenticate a user
-http://localhost:8000/routes/logout_user.php   POST  Destroy user session
+http://localhost:8000/routes/signup_user.php POST Register a new user
+http://localhost:8000/routes/login_user.php POST Authenticate a user
+http://localhost:8000/routes/logout_user.php POST Destroy user session
 
 ✅ Features
 Input validation
@@ -101,3 +101,5 @@ All API requests use JSON POST format.
 ├── routes # Endpoint routes
 ├── includes # DB connection, session config
 └── utils # Generic Methods or function (As of now empty)
+
+![Screenshot from 2025-05-06 20-00-15](https://github.com/user-attachments/assets/fc65c8c7-7485-4023-a2db-f2c9db64c36c)
