@@ -90,6 +90,7 @@ Guest users can skip login to explore the map directly.
 
 All API requests use JSON POST format.
 
+
 📁 Folder Structure
 
 /Client
@@ -103,3 +104,11 @@ All API requests use JSON POST format.
 └── utils # Generic Methods or function (As of now empty)
 
 ![Screenshot from 2025-05-06 20-00-15](https://github.com/user-attachments/assets/fc65c8c7-7485-4023-a2db-f2c9db64c36c)
+
+![Screenshot from 2025-05-06 20-00-30](https://github.com/user-attachments/assets/0bd79236-4c36-4daa-a940-d00ad320758f)
+
+![Screenshot from 2025-05-06 20-00-39](https://github.com/user-attachments/assets/678e4d9f-1390-4d07-87a8-f35e532b054f)
+
+
+
+
